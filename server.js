@@ -7,7 +7,7 @@ config()
 const app = exp()
 //Add cors middleware (Cross Origin Resource Sharing - different domains)
 app.use(cors({
-    origin:"https://empapp-nine.vercel.app" //accepts reqs from this origin
+    origin:"https://empapp-nine.vercel.app/" //accepts reqs from this origin
 }))
 app.use(exp.json())
 app.use("/employee-api", empApp)
